@@ -1,0 +1,96 @@
+/*
+The Purpose of the Stylesheet is to add the styling to "MENU-1"
+@ version 0.0.1
+*/
+
+
+/*
+	Created on : <22nd-Aug-2019>
+    Author     : <csk>
+*/
+
+/* Table of Content
+
+	1.	Menu
+
+*/
+body,
+.open-sans {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.bold-cls {
+	font-weight: bold;
+}
+
+.italic-cls {
+	font-style: italic;
+}
+
+.bg-prim {
+	background-color: rgb(24,24,24);
+	box-shadow: 5px 5px 2px 0px;
+}
+
+.company {
+	color: rgb(26,168,208);
+}
+
+.cname {
+	color: #fff;
+}
+
+.nav-item {
+	padding: 5px 30px;
+	border-left: 2px solid #fff;
+}
+.fa-bars {
+	color: #fff;
+}
+
+.cut-link {
+	color: #fff;
+}
+
+.cut-link:hover {
+	background-color: transparent;
+}
+
+#dropdownMenuButton {
+
+}
+
+.dropdown-menu {
+	border-radius: 0;
+	background-color: rgb(26,168,208);
+}
+
+.dropdown-row {
+	width: 100%;
+	background-color: rgb(26,168,208);
+}
+
+div.dropdown-multicol {
+	width: 18em;
+}
+
+div.dropdown-row>a.dropdown-item {
+	display: inline-block;
+	width: 38%;
+}
+
+div.dropdown-multicol2>div.dropdown-col {
+	display: inline-block;
+}
+
+
+/*media queries*/
+@media only screen and (max-width: 991px) {
+	div.dropdown-multicol {
+		width: 100%;
+		text-align: center;
+	}
+	div.dropdown-row>a.dropdown-item {
+		width: 50%;
+	}
+}

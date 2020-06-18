@@ -1,0 +1,83 @@
+/*
+The Purpose of the Stylesheet is to add the styling to "MENU-1"
+@ version 0.0.1
+*/
+
+
+/*
+	Created on : <22nd-Aug-2019>
+    Author     : <csk>
+*/
+
+/* Table of Content
+
+	1.	Menu
+
+*/
+body,
+.open-sans {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.bold-cls {
+	font-weight: bold;
+}
+.bg-prim {
+	background-color: rgb(28,125,71);
+}
+
+.social {
+	width: 30%;
+}
+.social a i {
+	padding: 10px;
+	color: #fff;
+}
+
+.social a i:hover {
+	background-color: #fff;
+	color: rgb(28,125,71);
+}
+
+.brand {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.brand h1 {
+	color: #fff;
+	font-size: 50px;
+}
+
+.bg-seco {
+	background-color: rgb(11,93,47);
+}
+
+.cut-link {
+	margin-left: 30px;
+	margin-right: 30px;
+	color: #fff;
+	position: relative;
+}
+
+.cut-link:hover {
+	color: yellow;
+}
+
+.cut-link::after {
+	background: none repeat scoll 0 0 transparent;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: yellow;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.cut-link:hover::after {
+	width: 100%;
+	left: 0%;
+}

@@ -1,0 +1,91 @@
+/*
+The Purpose of the Stylesheet is to add the styling to "MENU-3"
+@ version 0.0.1
+*/
+
+
+/*
+	Created on : <22nd-Aug-2019>
+    Author     : <csk>
+*/
+
+/* Table of Content
+
+	1.	Menu
+
+*/
+body,
+.open-sans {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.bold-cls {
+	font-weight: bold;
+}
+
+.bg-prim {
+	margin-top: 15px;
+	background-color: rgb(0,88,102);
+}
+
+.cut-link {
+	position: relative;
+	padding: 5px 20px;
+	color: #fff;
+}
+
+.cut-link:hover {
+	color: yellow;
+}
+
+.cut-link:after{
+	position: absolute;
+	bottom: 0;
+	right: 100%;
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.cut-link:hover:after {
+	left: 0%;
+	width: 100%;
+}
+
+.cut-link:before {
+	position: absolute;
+	top: 0;
+	right: 50%;
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: yellow;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.cut-link:hover:before {
+	right: 0%;
+	width: 100%;
+}
+
+.logo-cls {
+	position: absolute;
+	top: 0;
+	left:10%;
+	width: 70px;
+	height: 70px;
+}
+
+@media only screen and (max-width: 991px) {
+	#navbarThre {
+		margin-top: 30px;
+	}
+
+	.bg-prim {
+		margin-top: 10px;
+	}
+}
